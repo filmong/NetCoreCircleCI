@@ -6,6 +6,8 @@ jobs:
       - image: microsoft/dotnet:2.1-runtime
     steps:
       - checkout
+      - run: mkdir -p my_workspace
+      - run: echo "Trying out workspaces" > my_workspace/echo-output
       - run:  
           name: Build
           command: dotnet build
