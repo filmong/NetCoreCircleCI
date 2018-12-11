@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: find
-      - run: dotnet build
+      - run: dotnet build ./test/test.csproj
       #- run:  
           # name: Build
           # command: dotnet build
