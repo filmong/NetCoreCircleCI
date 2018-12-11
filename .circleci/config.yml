@@ -6,7 +6,7 @@ jobs:
       - image: microsoft/dotnet:2.1-runtime
     steps:
       - checkout
-      - run: echo "A first hello, job one"
-      - run: dotnet build
-      - run: dotnet run
+      - run:  
+          name: Build
+          command: dotnet build
       
