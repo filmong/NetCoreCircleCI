@@ -7,7 +7,8 @@ jobs:
     steps:
       - checkout
       - run: find
+      - run: dotnet restore
       - run:  
           name: Build
-          command: dotnet build
+          # command: dotnet build
       
